@@ -29,5 +29,3 @@ draw_network(sg,location="C:/Users/1/James/Research/Projects/Graph Project/"
                          "relatedness_graph.png")
 '''
 document_entities = get_entities()
-
-print document_entities[0]
