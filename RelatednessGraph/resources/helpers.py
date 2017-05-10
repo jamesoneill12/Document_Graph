@@ -1,5 +1,13 @@
+import re, os
+from nltk.stem import WordNetLemmatizer
+import numpy as np
+from nltk.corpus import stopwords
+from collections import defaultdict
+from gensim import models, corpora
+from os.path import isfile
+from os import listdir
+import matplotlib.pyplot as plt
 # https://www.archives.gov/open/dataset-cfr.html#how - open usa gov data
-
 
 flatten = lambda l: [item for sublist in l for item in sublist]
 

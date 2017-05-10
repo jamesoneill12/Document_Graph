@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 import networkx as nx
 from nltk.corpus import stopwords
 from nltk.stem import WordNetLemmatizer
-from models.helpers import *
+from ngram_graph.helpers import *
 
 #from NetworkxD3 import simpleNetworkx
 def make_graph(text,scores=None):

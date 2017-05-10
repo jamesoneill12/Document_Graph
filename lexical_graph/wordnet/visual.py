@@ -44,7 +44,7 @@ try:
 except Exception:
     print ('Please enter only a number value from the list.')
 
-# Store method call and description in one variable as a list of tuples...
+# Store method call and docs in one variable as a list of tuples...
 sel_relation = [
     ('root_hypernyms', 'The most abstract/general containing class for A'),
     ('hyponyms', 'A is a hyponym of B iff B is a type of A'),

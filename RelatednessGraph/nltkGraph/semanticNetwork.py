@@ -1,4 +1,5 @@
-import networkX as nx
+import networkx as nx
+from relatedness_graph import *
 
 class Semantic_Network:
     """ A Semantic_Network captures all of the information about the inter-relatedness of concepts (words) in a particular space (space used non-technically here). It contains a set of words, and a set of connections between those words. A connection is fully specified by the two words it connects, and the strength it connects. Behind the scenes, a Semantic_Network is a flow-network graph, with the words serving as nodes, the connections serving as flow-paths, and the strengths of those connections serving as the capacity of each of those flow-paths. Relatedness is calculated as a max-flow calculation with some modifications (see the doc string for calc_relatedness).

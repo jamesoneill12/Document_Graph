@@ -1,6 +1,7 @@
 import matplotlib.pyplot as plt
-import networkx as nx
 from relatedness_graph import *
+from semanticNetwork import Semantic_Network
+
 
 dog_entities = ["dog", "cat", "horse", "saddle", "rider", "mouse", "cheese",
                 "churning", "milk", "cow", "human", "race", "gambling"]
@@ -44,6 +45,7 @@ def draw_graph(graph, location=None):
     plt.clf()
     nx.draw(graph, positions)
     nx.draw_networkx_edge_labels(graph, positions, edge_labels=labels)
+
     if location is None:
         plt.ion()
         plt.show()
