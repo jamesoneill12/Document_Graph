@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="Encoding">
-    <file url="file://$PROJECT_DIR$/RelatednessGraph/openIE_results/openIE.py" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/graph/relatednessGraph/openIE_results/openIE.py" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../../../../Publishing_Projects/Legal_Retrieval/tests/amend_par.py" charset="UTF-8" />
   </component>
 </project>

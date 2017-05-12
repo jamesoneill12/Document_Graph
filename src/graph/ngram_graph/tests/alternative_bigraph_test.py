@@ -8,6 +8,7 @@ from collections import OrderedDict
 # Construct the network reading from the file
 # file should have only two columns (of two nodes)
 # with no header and it should be tab delimited
+
 def constructNetwork(network_file):
 	# Open the network file
 	with open(network_file, "r") as network:

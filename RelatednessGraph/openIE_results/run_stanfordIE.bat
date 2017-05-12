@@ -1,2 +1,0 @@
-cd C:\Users\1\James\stanford-corenlp-full-2015-12-09\stanford-corenlp-full-2015-12-09
-java -mx1g -cp "*" edu.stanford.nlp.naturalli.OpenIE - C:/Users/1/James/Research/Projects/GraphProject/LegalGraph/Legal_Graph_Words/Implementation/RelatednessGraph/openIE_results/ie_sentence.txt > C:/Users/1/James/Research/Projects/GraphProject/LegalGraph/Legal_Graph_Words/Implementation/RelatednessGraph/openIE_results/results.txt

@@ -1,0 +1,6 @@
+The lexical graph is an intermediate representation
+before added to the supergraph. It contains all relations extracted
+from each lexical resource and their links.
+
+A networkx Multigraph is created to allow optional data and attributes
+to connect across the lexical graph.
