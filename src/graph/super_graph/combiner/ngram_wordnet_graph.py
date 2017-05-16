@@ -11,7 +11,8 @@ class CombineGraphs():
         self.graph1 = graph_pair[0]
         self.graph2 = graph_pair[1]
 
-    def combine_wordnetNgram(docpath="C:/Users/1/James/grctc/GRCTC_Project/Classification/Data/docs/"):
+    def combine_wordnetNgram(docpath="C:/Users/1/James/grctc/"
+                                     "GRCTC_Project/Classification/Data/docs/", show=False):
 
         # wordnet graph
         wg = wnGraph(docpath)
@@ -30,20 +31,40 @@ class CombineGraphs():
 
         return combine
 
-    def combine_wordnetVerbNet(docpath="C:/Users/1/James/grctc/GRCTC_Project/Classification/Data/docs/"):
+    def combine_wordnetVerbNet(docpath="C:/Users/1/James/grctc/"
+                                       "GRCTC_Project/Classification/Data/docs/",show=False):
         # wordnet graph
         wg = wnGraph(docpath)
         wn_graph = wg.graph
 
-        # bigram graph
+        # verbnet graph
         vg = verbnetGraph(docpath)
 
+        # combine and display
+        combine = nx.compose(wn_graph, vg)
+        # return the graph and labels
+        if show:
+            nx.draw(combine, with_labels=True)  # ,with_labels=True)
+            plt.show()
+
+        return combine
+
+    def combine_wordnetFrameNet(docpath="C:/Users/1/James/grctc/"
+                                       "GRCTC_Project/Classification/Data/docs/",show=False):
+        # wordnet graph
+        wg = wnGraph(docpath)
+        wn_graph = wg.graph
+
+        # framenet graph
+        fn_graph = framenetGraph(docpath)
 
         # combine and display
-        combine = nx.compose(wn_graph, ngram_g)
+        combine = nx.compose(wn_graph, fn_graph)
+
         # return the graph and labels
-        nx.draw(combine, with_labels=True)  # ,with_labels=True)
-        plt.show()
+        if show:
+            nx.draw(combine, with_labels=True)  # ,with_labels=True)
+            plt.show()
 
         return combine
 

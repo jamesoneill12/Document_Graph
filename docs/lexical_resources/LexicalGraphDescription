@@ -1,0 +1,25 @@
+Why would you use FrameNet when you have WordNet?
+
+* The lexical information each contains is different,and in many ways complementary:
+* FN has little to say about common nouns;
+* WN noun hierarchies are usually good
+* WN has little syntagmatic information, FN has a lot
+
+
+| POS        | WordNet           | FrameNet  | VerbNet| PropBank |
+| ------------- |:-------------:| -----:| -----:| -----:|
+| Noun      | 146,312 | 5,177 | | |
+| Verb      | 25,047      |   4, 879 | | |
+| Adjective | 30,002      |    2, 270 | | |
+| Adverb | 5, 580      |    (other) 387 | | |
+| Total | 206, 941    | 12, 713 | | |
+
+### Structural differences - WordNet and FrameNet
+* WN: separate hierarchies for N, V, Adj, and Adv., (only)!
+* Each FN frame can cover words of any POS
+* WN: hyper-/hyponymy relations between synsets (i.e. between LUs that are roughly synonymous)!
+* FN: no LU relations per se, but several types of frame relations
+* Content differences:!
+* FN: annotated examples showing syntax and semantics of each LU.
+* FN describes roles (Frame Elements) for each frame
+* FN frame hierarchy often provides better generalizations than WN synset hierarchy

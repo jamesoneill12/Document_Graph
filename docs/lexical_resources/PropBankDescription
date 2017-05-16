@@ -1,0 +1,24 @@
+PropBank:
+The  Penn  Proposition  Bank  focuses  on the argument structure of verbs,
+and provides a    corpus    annotated    with    semantic    roles,
+including   participants   traditionally   viewed   as   arguments and adjuncts.
+
+An important goal is to provide consistent semantic role labels across different
+syntactic realizations of the same verb, as in the window in [ARG0  John] broke
+[ARG1  the  window]  and [ARG1  The  window]  broke.
+
+Arg0 and Arg1 are used rather than the more traditional Agent and Patient to
+keep the annotation as theory-neutral as possible, and to facilitate mapping
+to richer representations.
+
+The 1M word Penn Treebank II Wall Street Journal corpus has been successfully
+annotated with semantic argument structures for verbs and  is  now available
+via the Penn Linguistic Data Consortium as PropBank I (Palmer, et. al., 2005).
+Coarse-grained sense tags, based on groupings of WordNet  senses,  are  being
+added, as well as links from the argument labels in the Frames Files to FrameNet
+frame  elements.
+
+There are close parallels to other semantic role labeling  projects,
+such as FrameNet (Baker,  et.  al.,  1998;  Fillmore  &  Atkins,  1998;
+Fillmore  &  Baker,  2001),   Salsa   (Ellsworth,   et.al,   2004),
+Prague Tectogrammatics (Hajicova  &  Kucerova,  2002)  and IAMTC, (Helmreich, et. al., 2004)

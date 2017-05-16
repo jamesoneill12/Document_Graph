@@ -1,0 +1,49 @@
+Wiktionary is used to parse etymologies, definitions, pronunciations,
+examples, audio links and related words.
+
+Etymology studies the origin of words and how they have changed over time.
+http://www.mt-archive.info/15/MTS-2015-DeMelo.pdf
+
+#### JSON structure
+
+~~~~
+[{
+    "pronunciations": {
+        "text": ["pronunciation text"],
+        "audio": ["pronunciation audio"]
+    },
+    "definitions": [{
+        "relatedWords": [{
+            "relationshipType": "word relationship type",
+            "words": ["list of related words"]
+        }],
+        "text": "definition text",
+        "partOfSpeech": "part of speech",
+        "examples": ["list of examples"]
+    }],
+    "etymology": "etymology text",
+}]
+~~~~
+
+### What it contains
+
+~~~
+PARTS_OF_SPEECH = [
+    "noun", "verb", "adjective", "adverb", "determiner",
+    "article", "preposition", "conjunction", "proper noun",
+    "letter", "character", "phrase", "proverb", "idiom",
+    "symbol", "syllable", "numeral", "initialism", "interjection",
+]
+
+RELATIONS = [
+    "synonyms", "antonyms", "hypernyms", "hyponyms",
+    "meronyms", "holonyms", "troponyms", "related terms",
+    "derived terms", "coordinate terms", "translations"
+]
+
+UNWANTED_LIST = [
+    'External links',
+    'Anagrams', 'References',
+    'Statistics', 'See also'
+]
+~~~
